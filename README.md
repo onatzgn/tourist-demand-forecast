@@ -1,4 +1,8 @@
-Forecast tourist demand for historical landmarks using synthetic behavior, seasonality, weather, ticket pricing, and event effects. The pipeline generates raw travel data, builds weekly city-landmark features, trains forecasting models, compares baseline vs machine learning vs time-series forecasts, and produces metrics and plots.
+This is a small side data project inspired by TravelGuideApp, a travel and discovery app. The goal is to simulate user visits to historical landmarks and build a forecasting pipeline that estimates weekly demand per location using behavioral, seasonal, weather, pricing, and event-related features.
+
+The project includes a synthetic dataset generator, basic data processing steps, SQL based analysis, and a few forecasting approaches. It was initially developed as part of an internal analysis for exploring B2B use cases and demand patterns across different cities and seasons. The pipeline generates raw travel data, builds weekly city–landmark features, trains multiple forecasting models, and compares baseline, machine learning, and time-series approaches.
+
+All data in the project is synthetic and generated locally so the full pipeline can be reproduced without external dependencies.
 
 Outputs include raw CSV files, a SQLite database, processed weekly features, a trained model bundle, test predictions, city and landmark metric breakdowns, and actual-vs-predicted charts in `reports/figures`. Metrics are MAE, RMSE, and MAPE (with low-count protection to limit instability when denominators are near zero).
 
